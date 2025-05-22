@@ -1,0 +1,71 @@
+Implement changes tomorrow + 2 TikTok vids
+
+To make your site images more responsive and ensure the map fills all available space, follow these steps:
+
+---
+
+### 1. Make Images in `#info-box-full > img` Responsive
+
+Add the following CSS to your stylesheet:
+
+````css
+/* ...existing code... */
+#info-box-full > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;   /* Ensures image never exceeds container width */
+    height: auto;      /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for a modern look */
+}
+/* ...existing code... */
+````
+
+---
+
+### 2. Make the Map in index.html Fully Responsive
+
+**Update your HTML:**
+
+Change this line in index.html:
+```html
+<img src="images/map.png" width="100%" alt="This is a map of Pine City Zoo">
+```
+to:
+```html
+<img src="images/map.png" class="responsive-map" alt="This is a map of Pine City Zoo">
+```
+
+**Add this CSS:**
+````css
+.responsive-map {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100vw; /* Prevents overflow on very small screens */
+}
+````
+
+If you want the map to always fill the available vertical space as well, you can use:
+````css
+#main-home, .responsive-map {
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+}
+````
+
+---
+
+### 3. Learning Resources for Responsive Images & Layouts
+
+- [MDN: Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+- [MDN: Responsive Design Basics](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+- [CSS Tricks: Responsive Images](https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/)
+- [freeCodeCamp: Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+
+---
+
+**Summary:**  
+- Use `max-width: 100%` and `height: auto` for images.
+- Use CSS classes for special images like the map.
+- Explore the resources above to deepen your responsive design skills! 
