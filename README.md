@@ -13,9 +13,9 @@ Built entirely with **HTML5** and **CSS3**, this project demonstrates how clear 
 It combines a colorful, illustrated map with easy-to-use navigation and animal information pages — helping visitors explore, plan their trip, and learn along the way.
 
 ### 🎯 Main Goals
-- 🗺️ Help parents and kids **navigate the zoo** easily.
-- 🦁 Provide **educational animal facts** in a family-friendly way.
-- 🌴 Introduce **places within the zoo** such as cafes, trails, and rest areas.
+- 🗺️ Help parents and kids **navigate the zoo** easily.![Map](https://github.com/Liyema04/Pine-City-Zoo/blob/main/images/map_page.png)
+- 🦁 Provide **educational animal facts** in a family-friendly way.![Animals](https://github.com/Liyema04/Pine-City-Zoo/blob/main/images/animals_page.png)
+- 🌴 Introduce **places within the zoo** such as cafes, trails, and rest areas.![Places](https://github.com/Liyema04/Pine-City-Zoo/blob/main/images/places.png)
 - 🧭 Demonstrate **multi-page navigation and layout consistency** using HTML and CSS only.
 
 ---
